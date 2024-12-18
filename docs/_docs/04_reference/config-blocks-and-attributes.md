@@ -581,7 +581,7 @@ remote_state {
 
   encryption = {
     key_provider = "pbkdf2"
-    passphrase = "SUPERSECRETPASSPHRASE"
+    passphrase   = get_env("PBKDF2_PASSPHRASE")
   }
 }
 ```
